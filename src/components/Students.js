@@ -10,11 +10,6 @@ const Students=()=>{
         axios.get("https://student-registration13.herokuapp.com/students").then((res)=>setStudents(res.data.data.students))
     },[isReload])
 
-    //const onDelete = async (rollNo)=>{
-    //    const result = await axios.delete(`https://student-registration13.herokuapp.com/student/delete/rollNo=${rollNo}`,{name,standard,rollNo});
-    //    if(!result) alert("something went wrong!");
-    //    else setIsDeleted(true)
-    //}
 
     const onDelete = (id) => {
         const result = axios.delete(`https://student-registration13.herokuapp.com/student/delete/${id}`)
