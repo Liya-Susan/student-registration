@@ -11,7 +11,7 @@ const Students=()=>{
     },[isReload])
 
     //const onDelete = async (rollNo)=>{
-    //    const result = await axios.delete(`http://localhost:4000/student/delete/rollNo=${rollNo}`,{name,standard,rollNo});
+    //    const result = await axios.delete(`https://student-registration13.herokuapp.com/student/delete/rollNo=${rollNo}`,{name,standard,rollNo});
     //    if(!result) alert("something went wrong!");
     //    else setIsDeleted(true)
     //}
