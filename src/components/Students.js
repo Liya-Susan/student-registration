@@ -7,7 +7,7 @@ const Students=()=>{
     const [isReload,setIsReload]=useState(false)
 
     useEffect(()=>{
-        axios.get("http://https://student-registration13.herokuapp.com//students").then((res)=>setStudents(res.data.data.students))
+        axios.get("https://student-registration13.herokuapp.com/students").then((res)=>setStudents(res.data.data.students))
     },[isReload])
 
     //const onDelete = async (rollNo)=>{
