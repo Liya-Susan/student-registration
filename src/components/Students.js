@@ -17,7 +17,7 @@ const Students=()=>{
     //}
 
     const onDelete = (id) => {
-        const result = axios.delete(`http://localhost:4000/student/delete/${id}`)
+        const result = axios.delete(`https://student-registration13.herokuapp.com/student/delete/${id}`)
         if(!result) alert("something went wrong!");
         else setIsReload(!isReload);
        
