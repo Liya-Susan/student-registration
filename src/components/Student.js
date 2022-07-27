@@ -9,7 +9,7 @@ const Student=()=>{
     const [rollNo,setRollNo]=useState([]);
 
     const onSubmitHandler = async ()=>{
-        const result = await axios.post("http://localhost:4000/student",{name,standard,rollNo});
+        const result = await axios.post("https://student-registration13.herokuapp.com/student",{name,standard,rollNo});
         if(!result) alert("something went wrong");
     }
 
